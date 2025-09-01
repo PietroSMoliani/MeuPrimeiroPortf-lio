@@ -107,11 +107,16 @@ document.getElementById("ownerEmail").textContent = CONFIG.email;
 /* ========= Scroll suave nos links internos ========= */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener("click", (e) => {
-    const id = a.getAttribute("href").slice(1);
-    const target = document.getElementById(id);
-    if (target) {
-      e.preventDefault();
-      window.scrollTo({ top: target.offsetTop - 80, behavior: "smooth" });
+    const href = a.getAttribute("href");
+    
+    // Se for um link interno (começa com #) e não é um link para outra página
+    if (href.startsWith("#") && !href.includes(".html")) {
+      const id = href.slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.offsetTop - 80, behavior: "smooth" });
+      }
     }
   });
 });

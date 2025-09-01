@@ -395,3 +395,17 @@ footer {
   .cta-buttons { flex-direction: column; gap: 1rem; }
   .btn { width: 100%; text-align: center; }
 }
+/* Estilo para link ativo na navegação */
+.nav-link.active {
+  color: var(--neon);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Ajustes para páginas individuais */
+.about, .projects, .contact {
+  min-height: calc(100vh - 200px);
+  padding-top: 10rem;
+}
