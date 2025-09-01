@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio Criativo | Pietro Moliani</title>
+
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Efeito de partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home" class="nav-link">Início</a>
+    <a href="#about" class="nav-link">Sobre</a>
+    <a href="#projects" class="nav-link">Projetos</a>
+    <a href="#contact" class="nav-link">Contato</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Bolhas de fundo -->
+    <div class="bubble" style="width: 300px; height: 300px; top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="bubble" style="width: 200px; height: 200px; top: 70%; left: 80%; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 150px; height: 150px; top: 40%; left: 70%; animation-delay: 4s;"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Olá, eu sou <span id="typed"></span></h1>
+      <h2 class="hero-subtitle">Desenvolvedor Web Criativo</h2>
+      <p class="hero-description">
+        Especialista em criar experiências digitais impressionantes com HTML, CSS e JavaScript.
+        Transformo ideias em realidade com designs inovadores, interações fluidas e tecnologia de ponta.
+      </p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">Meus Projetos</a>
+        <a href="#contact" class="btn btn-secondary">Contate-me</a>
+      </div>
+    </div>
+
+    <!-- Avatar 3D -->
+    <div class="avatar-container">
+      <div class="avatar" id="avatarCube" title="Passe o mouse para pausar/retomar a rotação">
+        <div class="avatar-face front">
+          <!-- Troque a imagem pela sua foto -->
+          <img src="https://via.placeholder.com/400" alt="[Seu Nome]">
+        </div>
+        <div class="avatar-face back">
+          <i class="fas fa-code" style="font-size: 5rem; color: var(--secondary);"></i>
+        </div>
+        <div class="avatar-face right">
+          <i class="fab fa-html5" style="font-size: 5rem; color: #e34f26;"></i>
+        </div>
+        <div class="avatar-face left">
+          <i class="fab fa-css3-alt" style="font-size: 5rem; color: #2965f1;"></i>
+        </div>
+        <div class="avatar-face top">
+          <i class="fab fa-js" style="font-size: 5rem; color: #f7df1e;"></i>
+        </div>
+        <div class="avatar-face bottom">
+          <i class="fas fa-laptop-code" style="font-size: 5rem; color: var(--accent);"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="about" class="about">
+    <h2 class="section-title">Sobre Mim</h2>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Sou um desenvolvedor web apaixonado por criar experiências digitais memoráveis.
+          Com mais de 5 anos de experiência, combino habilidades técnicas com senso estético
+          para produzir websites que não apenas funcionam perfeitamente, mas também encantam os usuários.
+        </p>
+        <p>
+          Minha abordagem é centrada no usuário, garantindo que cada projeto seja intuitivo,
+          acessível e visualmente impressionante. Acredito que a web deve ser um espaço inclusivo
+          onde a tecnologia e a criatividade se encontram para resolver problemas reais.
+        </p>
+        <p>
+          Quando não estou codando, você pode me encontrar explorando novas tecnologias,
+          participando de hackathons ou ensinando programação para iniciantes.
+        </p>
+
+        <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: var(--secondary);">Minhas Habilidades</h3>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Responsivo</h4>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+            <h4>Performance</h4>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+            <h4>UI/UX</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Meus Projetos</h2>
+
+    <div class="projects-container">
+      <div class="project-card tilt">
+        <div class="project-img-container">
+          <img src="https://via.placeholder.com/600x400" alt="Projeto 1" class="project-img">
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Plataforma de Cursos Online</h3>
+          <p class="project-description">
+            Uma plataforma completa para ensino à distância com sistema de aulas,
+            pagamentos e certificados. Desenvolvida com foco na experiência do usuário.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI/UX</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt">
+        <div class="project-img-container">
+          <img src="https://via.placeholder.com/600x400" alt="Projeto 2" class="project-img">
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Dashboard Analytics</h3>
+          <p class="project-description">
+            Painel administrativo com visualização de dados em tempo real, gráficos
+            interativos e exportação de relatórios. Totalmente responsivo e acessível.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Chart.js</span>
+            <span class="tag">CSS Animations</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt">
+        <div class="project-img-container">
+          <img src="https://via.placeholder.com/600x400" alt="Projeto 3" class="project-img">
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Portfólio Interativo</h3>
+          <p class="project-description">
+            Website portfólio com efeitos 3D, transições criativas e design minimalista.
+            Otimizado para performance e SEO.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">GSAP</span>
+            <span class="tag">3D Effects</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Vamos Conversar</h2>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-text">
+            <h3>Email</h3>
+            <p id="ownerEmail">pietrosilvamoliani@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-text">
+            <h3>Telefone</h3>
+            <p>+55 (11) 98178-7771</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-text">
+            <h3>Localização</h3>
+            <p>São Paulo, Brasil</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" class="form-control" placeholder=" " required>
+          <label for="name" class="form-label">Seu Nome</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" class="form-control" placeholder=" " required>
+          <label for="email" class="form-label">Seu email</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" class="form-control" placeholder=" " required></textarea>
+          <label for="message" class="form-label">Sua Mensagem</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <div class="footer-content">
+      <div class="footer-logo">Pietro Moliani</div>
+
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Início</a>
+        <a href="#about" class="footer-link">Sobre</a>
+        <a href="#projects" class="footer-link">Projetos</a>
+        <a href="#contact" class="footer-link">Contato</a>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <p class="copyright">
+        © <span id="year"></span> • Pietro Moliani — Desenvolvedor Web. Feito com HTML, CSS e JS.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
